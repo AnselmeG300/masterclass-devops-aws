@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "=== Build de l'application statique ==="
       - mkdir -p dist
-      - export BUILD_TAG="v${CODEBUILD_BUILD_NUMBER} du $(date -u '+%d/%m/%Y a %H:%M UTC')"
+      - "export BUILD_TAG=\"v${CODEBUILD_BUILD_NUMBER} du $(date -u '+%d/%m/%Y a %H:%M UTC')\""
       - echo "Version generee : ${BUILD_TAG}"
       - sed "s|__BUILD_VERSION__|${BUILD_TAG}|g" app/index.html > dist/index.html
       - cp app/styles.css dist/styles.css
