@@ -1,0 +1,8 @@
+# Copiez ce fichier en terraform.tfvars et adaptez les valeurs.
+# terraform.tfvars ne doit PAS etre committe (voir .gitignore).
+
+aws_region    = "eu-west-3"
+project_name  = "masterclass-devops"
+github_owner  = "AnselmeG300"
+github_repo   = "masterclass-devops-aws"
+github_branch = "main"

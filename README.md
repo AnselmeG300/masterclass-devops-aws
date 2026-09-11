@@ -80,4 +80,4 @@ Rare, mais possible selon le type de contenu detecte par l'etape Deploy.
 Dans ce cas, ajouter dans buildspec.yml un deploiement direct via
 "aws s3 sync dist/ s3://NOM_DU_BUCKET_SITE/ --delete" et retirer l'etape
 Deploy du pipeline. La version a 3 etapes reste la plus parlante en cours.
-# masterclass-devops-aws
+
